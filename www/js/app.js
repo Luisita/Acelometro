@@ -1,8 +1,6 @@
 $(document).on("deviceready", function(){
   alert("Mueve tu teléfono");
-  var movimiento = setInterval(function() {
-     navigator.accelerometer.getCurrentAcceleration(Posicion, null);
-  }, 1000);
+  navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 });
 
 function onSuccess(acceleration) {
