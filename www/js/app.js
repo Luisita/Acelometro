@@ -1,3 +1,4 @@
+
 $(document).on("deviceready", function(){
   alert("Mueve tu teléfono");
   navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
