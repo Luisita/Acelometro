@@ -10,10 +10,9 @@ function onSuccess(acceleration) {
 	var z = acceleration.z;
 
 	if((x>-2 && x<2) && (y>4 && y<9) && (z>5 && z<9)){
-		alert('Acceleration X: ' + acceleration.x + '\n' +
-              'Acceleration Y: ' + acceleration.y + '\n' +
-              'Acceleration Z: ' + acceleration.z + '\n' +
-              'Timestamp: '      + acceleration.timestamp + '\n');
+		alert('X: ' + acceleration.x + '\n' +
+              'Y: ' + acceleration.y + '\n' +
+              'Z: ' + acceleration.z + '\n' );
 	}
 
         
